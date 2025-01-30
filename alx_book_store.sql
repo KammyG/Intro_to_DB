@@ -7,7 +7,6 @@ CREATE TABLE Authors (
     author_name VARCHAR(215) NOT NULL
 );
 
-
 CREATE TABLE Books (
     book_id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(130) NOT NULL,
@@ -16,7 +15,6 @@ CREATE TABLE Books (
     publication_date DATE,
     FOREIGN KEY (author_id) REFERENCES Authors(author_id) ON DELETE SET NULL
 );
-
 
 CREATE TABLE Customers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
